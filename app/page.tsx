@@ -3,6 +3,7 @@
 import About from "@/components/About"
 import Home from "@/components/Home"
 import Navbar from "@/components/Navbar"
+import Skills from "@/components/Skills"
 
 export default function Page() {
   return (
@@ -10,6 +11,7 @@ export default function Page() {
       <Navbar />
       <Home />
       <About />
+      <Skills />
     </main>
   )
 }
