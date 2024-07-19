@@ -4,7 +4,7 @@ import React from 'react'
 
 const Navbar = () => {
     return (
-        <div className='absolute w-full flex justify-between text-gray-200 text-[16px] bg-gradient-to-r from-gray-900 to-gray-950 p-4'>
+        <div className='absolute w-full flex justify-between text-gray-200 text-[16px] bg-transparent p-4'>
             <div className='w-1/3 flex justify-around font-semibold'>
                 <Link href='/#home' className='hover:text-gray-50 hover:font-bold'>Home</Link>
                 <Link href='/#about' className='hover:text-gray-50 hover:font-bold'>About</Link>
