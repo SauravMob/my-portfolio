@@ -1,13 +1,15 @@
 "use client"
 
+import About from "@/components/About"
 import Home from "@/components/Home"
 import Navbar from "@/components/Navbar"
 
 export default function Page() {
   return (
-    <main className="flex min-h-screen flex-col">
+    <main className="overflow-hidden">
       <Navbar />
       <Home />
+      <About />
     </main>
   )
 }
