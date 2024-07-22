@@ -47,15 +47,15 @@ const Skills = () => {
 
     return (
         <div
-            id='about'
+            id='skills'
             className='w-screen h-screen sm:min-h-[90vh] bg-gradient-to-r to-neutral-950 from-neutral-900 p-10 cursor-default gap-4 text-gray-300'
         >
             <div className='text-5xl font-bold text-gray-300 border-b pb-2'>Skills & Experience</div>
 
             <div className='grid grid-cols-2 gap-4'>
                 <div className='my-10 grid grid-cols-3 gap-4 max-h-[500px]'>
-                    {skillsArray.map(v => (
-                        <div className="bg-white/30 backdrop-blur-md rounded-xl flex items-center p-2 gap-2 col-span-1">
+                    {skillsArray.map((v, k) => (
+                        <div key={k} className="bg-white/30 backdrop-blur-md rounded-xl flex items-center p-2 gap-2 col-span-1">
                             <Image
                                 src={v.id}
                                 className="h-8 w-8 bg-neutral-50 rounded-full p-1"

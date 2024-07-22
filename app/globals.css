@@ -63,7 +63,17 @@
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }
+}
+
+body::-webkit-scrollbar {
+  width: 3px;
+  background-color: gray;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: azure;
 }
