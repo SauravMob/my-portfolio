@@ -20,6 +20,7 @@ import tailwind from "@/app/assets/images/tailwind.webp"
 import typescript from "@/app/assets/images/typescript.webp"
 import Image from 'next/image'
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from './ui/accordion'
+import { motion } from "framer-motion"
 
 const Skills = () => {
 
@@ -46,7 +47,17 @@ const Skills = () => {
     ]
 
     return (
-        <div
+        <motion.div
+            initial={{ opacity: 0.5, scale: 0.5 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.5 }}
+            transition={{
+                type: "spring",
+                stiffness: 260,
+                damping: 20,
+                duration: 0.5,
+
+            }}
             id='skills'
             className='w-screen h-screen sm:min-h-[90vh] bg-gradient-to-r to-neutral-950 from-neutral-900 p-10 cursor-default gap-4 text-gray-300'
         >
@@ -85,7 +96,7 @@ const Skills = () => {
                     </Accordion>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 

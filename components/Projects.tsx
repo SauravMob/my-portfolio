@@ -3,11 +3,21 @@ import React from 'react'
 import Dashboard from '@/app/assets/images/Dashboard.png'
 import Dance from '@/app/assets/images/Dance.png'
 import Microservices from '@/app/assets/images/Microservices.png'
-import Link from 'next/link'
+import { motion } from "framer-motion"
 
 const Projects = () => {
     return (
-        <div
+        <motion.div
+            initial={{ opacity: 0.5, scale: 0.5 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.5 }}
+            transition={{
+                type: "spring",
+                stiffness: 260,
+                damping: 20,
+                duration: 0.5,
+
+            }}
             id='projects'
             className='w-screen h-screen sm:min-h-[90vh] bg-gradient-to-r to-neutral-950 from-neutral-900 p-10 cursor-default gap-4 text-gray-300'
         >
@@ -47,7 +57,7 @@ const Projects = () => {
             </div>
 
             <div className='flex justify-center p-4 text-lg font-semibold'>Here are some of my recent projects.</div>
-        </div>
+        </motion.div>
     )
 }
 

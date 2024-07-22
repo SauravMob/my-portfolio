@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import real_profile_pic from "@/app/assets/images/real_profile_pic.jpeg"
+import { motion } from "framer-motion"
 
 const About = () => {
     return (
@@ -23,11 +24,11 @@ const About = () => {
                 </div>
             </div>
             <div className='flex justify-center items-center'>
-                    <Image
-                        src={real_profile_pic}
-                        className='rounded-lg'
-                        alt="Back Image"
-                    />
+                <Image
+                    src={real_profile_pic}
+                    className='rounded-lg'
+                    alt="Back Image"
+                />
             </div>
         </div>
     )
