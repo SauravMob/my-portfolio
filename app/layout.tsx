@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${roboto_slab.className} bg-neutral-800`}>{children}</body>
+      <body className={`${roboto_slab.className} bg-neutral-800 h-screen`}>{children}</body>
     </html>
   )
 }

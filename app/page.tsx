@@ -9,7 +9,7 @@ import Thanks from "@/components/Thanks"
 
 export default function Page() {
   return (
-    <main className="overflow-hidden">
+    <main className="overflow-hidden min-h-screen">
       <Navbar />
       <Home />
       <About />
