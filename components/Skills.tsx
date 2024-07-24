@@ -47,36 +47,56 @@ const Skills = () => {
     ]
 
     return (
-        <motion.div
-            initial={{ opacity: 0.5, scale: 0.5 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0, scale: 0.5 }}
-            transition={{
-                type: "spring",
-                stiffness: 260,
-                damping: 20,
-                duration: 0.5,
-
-            }}
+        <div
             id='skills'
             className='w-screen h-screen sm:min-h-[90vh] bg-gradient-to-r to-neutral-950 from-neutral-900 p-10 cursor-default gap-4 text-gray-300'
         >
             <div className='text-5xl font-bold text-gray-300 border-b pb-2'>Skills & Experience</div>
 
             <div className='grid grid-cols-2 gap-4'>
-                <div className='my-10 grid grid-cols-3 gap-4 max-h-[500px]'>
+                <motion.ul
+                    variants={{
+                        hidden: { opacity: 1, scale: 0 },
+                        visible: {
+                            opacity: 1,
+                            scale: 1,
+                            transition: {
+                                delayChildren: 0.3,
+                                staggerChildren: 0.2
+                            }
+                        }
+                    }}
+                    initial="hidden"
+                    animate="visible"
+                    className='my-10 grid grid-cols-3 gap-4 max-h-[500px]'
+                >
                     {skillsArray.map((v, k) => (
-                        <div key={k} className="bg-white/30 backdrop-blur-md rounded-xl flex items-center p-2 gap-2 col-span-1">
+                        <motion.li
+                            key={k}
+                            initial={{ y: 20, opacity: 0 }}
+                            whileInView={{
+                                y: 0,
+                                opacity: 1
+                            }}
+                            transition={{ duration: 1 }}
+                            className="bg-white/30 backdrop-blur-md rounded-xl flex items-center p-2 gap-2 col-span-1"
+                        >
                             <Image
                                 src={v.id}
                                 className="h-8 w-8 bg-neutral-50 rounded-full p-1"
                                 alt={`${v.name} Logo`}
                             />
                             {v.name}
-                        </div>
+                        </motion.li>
                     ))}
-                </div>
-                <div className="flex flex-col p-8 bg-white/30 backdrop-blur-md m-10 rounded-xl h-80">
+                </motion.ul>
+                <motion.div
+                    initial={{ x: 200 }}
+                    whileInView={{ x: 0 }}
+                    transition={{
+                        duration: 1
+                    }}
+                    className="flex flex-col p-8 bg-white/30 backdrop-blur-md m-10 rounded-xl h-80">
                     <h1 className="font-semibold md:text-lg">
                         Software Developer
                     </h1>
@@ -94,9 +114,9 @@ const Skills = () => {
                             </AccordionContent>
                         </AccordionItem>
                     </Accordion>
-                </div>
+                </motion.div>
             </div>
-        </motion.div>
+        </div>
     )
 }
 
