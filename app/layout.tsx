@@ -1,12 +1,9 @@
 import { Roboto_Slab } from "next/font/google"
 import "./globals.css"
-import localFont from 'next/font/local'
 
-export const hollow = localFont({ src: "./assets/fonts/LondrinaOutline.ttf" })
-export const roboto_slab = Roboto_Slab({
+const roboto_slab = Roboto_Slab({
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-
 })
 
 export default function RootLayout({

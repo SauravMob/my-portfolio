@@ -59,13 +59,13 @@ const About = () => {
                         className='md:col-span-2 xs:col-span-3 lg:p-8 xs:p-2 md:text-xl sm:text-lg xs:text-sm my-auto text-gray-300'
                     >
                         <div>
-                            Hello! I'm delighted to introduce myself.
+                            Hello! I&apos;m delighted to introduce myself.
                         </div>
                         <div className='md:my-4 xs:my-2'>
                             I’m from Mumbai and passionate about software development. With experience in both frontend and backend web applications, I have a comprehensive understanding of the full development lifecycle.
                         </div>
                         <div>
-                            Over the past two years, I've had the opportunity to work with a variety of web technologies, which has significantly enriched my expertise. My curiosity drives me to continuously learn and implement new technologies, leading to the creation of impactful and innovative projects.
+                            Over the past two years, I&apos;ve had the opportunity to work with a variety of web technologies, which has significantly enriched my expertise. My curiosity drives me to continuously learn and implement new technologies, leading to the creation of impactful and innovative projects.
                         </div>
                     </motion.div>
                 </div>

@@ -1,8 +1,10 @@
 "use client"
 
-import { hollow } from '@/app/layout'
 import React from 'react'
+import localFont from 'next/font/local'
 import { motion } from "framer-motion"
+
+const hollow = localFont({ src: "../app/assets/fonts/LondrinaOutline.ttf" })
 
 const Thanks = () => {
     return (

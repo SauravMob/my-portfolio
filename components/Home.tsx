@@ -1,9 +1,12 @@
 "use client"
 
 import React from 'react'
-import { hollow } from '@/app/layout'
 import { Github, Linkedin, Twitter } from 'lucide-react'
 import { motion } from "framer-motion"
+
+import localFont from 'next/font/local'
+
+const hollow = localFont({ src: "../app/assets/fonts/LondrinaOutline.ttf" })
 
 const Home = () => {
     return (
@@ -28,7 +31,7 @@ const Home = () => {
                             delay: 0.5
                         }}
                         className='lg:text-6xl sm:text-4xl xs:text-2xl'
-                    >I'm</motion.span>
+                    >I&apos;m</motion.span>
                     <motion.span
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
