@@ -49,9 +49,9 @@ const Skills = () => {
     return (
         <div
             id='skills'
-            className='w-screen h-screen sm:min-h-[90vh] bg-gradient-to-r to-neutral-950 from-neutral-900 p-10 cursor-default gap-4 text-gray-300'
+            className='w-screen h-full sm:min-h-[90vh] bg-gradient-to-r to-neutral-950 from-neutral-900 lg:p-10 xs:px-8 xs:py-16 cursor-default gap-4 text-gray-300'
         >
-            <div className='text-5xl font-bold text-gray-300 border-b pb-2'>Skills & Experience</div>
+            <div className=' md:text-4xl xs:text-2xl font-bold text-gray-300 border-b pb-2'>Skills & Experience</div>
 
             <div className='grid grid-cols-2 gap-4'>
                 <motion.ul
@@ -68,7 +68,7 @@ const Skills = () => {
                     }}
                     initial="hidden"
                     animate="visible"
-                    className='my-10 grid grid-cols-3 gap-4 max-h-[500px]'
+                    className='my-10 grid lg:grid-cols-3 md:grid-cols-4 sm:grid-cols-3 xs:grid-cols-2 gap-4 sm:max-h-[500px] xs:max-h-[600px] lg:col-span-1 xs:col-span-2'
                 >
                     {skillsArray.map((v, k) => (
                         <motion.li
@@ -96,7 +96,7 @@ const Skills = () => {
                     transition={{
                         duration: 1
                     }}
-                    className="flex flex-col p-8 bg-white/30 backdrop-blur-md m-10 rounded-xl h-80">
+                    className="flex flex-col p-8 bg-white/30 backdrop-blur-md lg:my-10 w-full rounded-xl lg:h-80 lg:col-span-1 md:col-span-4 sm:col-span-3 xs:col-span-2">
                     <h1 className="font-semibold md:text-lg">
                         Software Developer
                     </h1>

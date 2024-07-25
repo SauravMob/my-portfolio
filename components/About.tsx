@@ -54,7 +54,7 @@ const About = () => {
                             duration: 1.5,
 
                         }}
-                        className='md:col-span-2 xs:col-span-3 lg:p-8 xs:p-2 md:text-xl xs:text-sm my-auto text-gray-300'
+                        className='md:col-span-2 xs:col-span-3 lg:p-8 xs:p-2 md:text-xl sm:text-lg xs:text-sm my-auto text-gray-300'
                     >
                         <div>
                             Hello! I'm delighted to introduce myself.
