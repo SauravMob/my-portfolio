@@ -103,7 +103,7 @@ const Skills = () => {
                         Software Developer
                     </h1>
                     <p className="mb-4 border-b pb-2 text-md">
-                        @ Mobavenue pvt ltd.
+                        @ Mobavenue Pvt Ltd.
                     </p>
                     <p className="text-sm md:text-base">
                         Worked as a full stack developer to build a DSP platform used for running campaigns and tracking the huge data of reports. Primary role includes building the apis and integrating it in frontend.
