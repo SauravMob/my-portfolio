@@ -1,3 +1,5 @@
+"use client"
+
 import { hollow } from '@/app/layout'
 import React from 'react'
 import { motion } from "framer-motion"

@@ -1,3 +1,5 @@
+"use client"
+
 import React from 'react'
 import aws from "@/app/assets/images/aws.webp"
 import bootstrap from "@/app/assets/images/bootstrap.png"

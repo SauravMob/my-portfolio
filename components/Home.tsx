@@ -1,3 +1,5 @@
+"use client"
+
 import React from 'react'
 import { hollow } from '@/app/layout'
 import { Github, Linkedin, Twitter } from 'lucide-react'

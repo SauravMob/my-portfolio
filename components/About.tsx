@@ -1,3 +1,5 @@
+"use client"
+
 import React from 'react'
 import Image from 'next/image'
 import real_profile_pic from "@/app/assets/images/real_profile_pic.jpeg"

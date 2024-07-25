@@ -1,8 +1,7 @@
-import { Inter, Roboto_Slab } from "next/font/google"
+import { Roboto_Slab } from "next/font/google"
 import "./globals.css"
 import localFont from 'next/font/local'
 
-const inter = Inter({ subsets: ["latin"] })
 export const hollow = localFont({ src: "./assets/fonts/LondrinaOutline.ttf" })
 export const roboto_slab = Roboto_Slab({
   subsets: ["latin"],
