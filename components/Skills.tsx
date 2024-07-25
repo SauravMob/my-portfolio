@@ -49,9 +49,9 @@ const Skills = () => {
     return (
         <div
             id='skills'
-            className='w-screen h-full sm:min-h-[90vh] bg-gradient-to-r to-neutral-950 from-neutral-900 lg:p-10 xs:px-8 xs:py-16 cursor-default gap-4 text-gray-300'
+            className='w-screen h-full bg-gradient-to-r to-neutral-950 from-neutral-900 lg:p-10 xs:px-8 xs:py-16 cursor-default gap-4 text-gray-300'
         >
-            <div className=' md:text-4xl xs:text-2xl font-bold text-gray-300 border-b pb-2'>Skills & Experience</div>
+            <div className='md:text-4xl xs:text-2xl font-bold text-gray-300 border-b pb-2'>Skills & Experience</div>
 
             <div className='grid grid-cols-2 gap-4'>
                 <motion.ul
