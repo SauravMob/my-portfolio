@@ -7,7 +7,7 @@ const Home = () => {
     return (
         <div
             id="home"
-            className='w-screen h-screen bg-desktop-pic bg-cover bg-center lg:p-16 xs:px-8 xs:py-16  cursor-default'
+            className='w-screen h-screen bg-desktop-pic bg-cover bg-center lg:p-16 xs:px-8 xs:py-16 cursor-default'
         >
             <div className='flex flex-col h-full justify-center'>
                 <motion.p
@@ -145,7 +145,7 @@ const Home = () => {
                     whileInView={{ opacity: 1 }}
                     transition={{
                         duration: 1
-                    }} className='font-semibold lg:text-3xl sm:text-2xl xs:text-2xl text-gray-400 ml-2'
+                    }} className='font-semibold lg:text-3xl sm:text-2xl xs:text-2xl text-gray-400'
                 >Full Stack Developer</motion.p>
             </div>
             <div className='text-white flex gap-4'>
