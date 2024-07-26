@@ -161,7 +161,7 @@ const Home = () => {
                         rotate: -90,
                         borderRadius: "100%"
                     }}
-                    href='https://www.linkedin.com/in/saurav-u-245013128' className='border flex items-center justify-center h-10 w-10 rounded-lg'
+                    href='https://www.linkedin.com/in/saurav-u-245013128' className='border flex items-center justify-center h-10 w-10 rounded-lg z-10'
                 >
                     <Linkedin />
                 </motion.a>
@@ -172,7 +172,7 @@ const Home = () => {
                         rotate: -90,
                         borderRadius: "100%"
                     }}
-                    href='https://github.com/SauravMob' className='border flex items-center justify-center h-10 w-10 rounded-lg'
+                    href='https://github.com/SauravMob' className='border flex items-center justify-center h-10 w-10 rounded-lg z-10'
                 >
                     <Github />
                 </motion.a>
@@ -183,7 +183,7 @@ const Home = () => {
                         rotate: -90,
                         borderRadius: "100%"
                     }}
-                    href='https://x.com/Sauravu193' className='border flex items-center justify-center h-10 w-10 rounded-lg'
+                    href='https://x.com/Sauravu193' className='border flex items-center justify-center h-10 w-10 rounded-lg z-10'
                 >
                     <Twitter />
                 </motion.a>
