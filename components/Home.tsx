@@ -39,7 +39,7 @@ const Home = () => {
                             duration: 1,
                             delay: 0.6
                         }}
-                        className={`${hollow.className} ml-4 transition ease-in-out hover:scale-125 hover:text-blue-500 duration-150 inline-block font-extrabold lg:text-7xl sm:text-6xl xs:text-4xl`}>S</motion.span>
+                        className={`${hollow.className} ml-4 transition ease-in-out hover:scale-125 hover:text-blue-500 duration-150 inline-block font-extrabold lg:text-7xl sm:text-6xl xs:text-4xl back`}>S</motion.span>
                     <motion.span
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
@@ -161,7 +161,7 @@ const Home = () => {
                         rotate: -90,
                         borderRadius: "100%"
                     }}
-                    href='/#linkdln' className='border flex items-center justify-center h-10 w-10 rounded-lg'
+                    href='https://www.linkedin.com/in/saurav-u-245013128' className='border flex items-center justify-center h-10 w-10 rounded-lg'
                 >
                     <Linkedin />
                 </motion.a>
@@ -172,7 +172,7 @@ const Home = () => {
                         rotate: -90,
                         borderRadius: "100%"
                     }}
-                    href='/#linkdln' className='border flex items-center justify-center h-10 w-10 rounded-lg'
+                    href='https://github.com/SauravMob' className='border flex items-center justify-center h-10 w-10 rounded-lg'
                 >
                     <Github />
                 </motion.a>
@@ -183,7 +183,7 @@ const Home = () => {
                         rotate: -90,
                         borderRadius: "100%"
                     }}
-                    href='/#linkdln' className='border flex items-center justify-center h-10 w-10 rounded-lg'
+                    href='https://x.com/Sauravu193' className='border flex items-center justify-center h-10 w-10 rounded-lg'
                 >
                     <Twitter />
                 </motion.a>
