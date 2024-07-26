@@ -161,6 +161,7 @@ const Home = () => {
                         rotate: -90,
                         borderRadius: "100%"
                     }}
+                    target='_blank'
                     href='https://www.linkedin.com/in/saurav-u-245013128' className='border flex items-center justify-center h-10 w-10 rounded-lg z-10'
                 >
                     <Linkedin />
@@ -172,6 +173,7 @@ const Home = () => {
                         rotate: -90,
                         borderRadius: "100%"
                     }}
+                    target='_blank'
                     href='https://github.com/SauravMob' className='border flex items-center justify-center h-10 w-10 rounded-lg z-10'
                 >
                     <Github />
@@ -183,6 +185,7 @@ const Home = () => {
                         rotate: -90,
                         borderRadius: "100%"
                     }}
+                    target='_blank'
                     href='https://x.com/Sauravu193' className='border flex items-center justify-center h-10 w-10 rounded-lg z-10'
                 >
                     <Twitter />

@@ -44,8 +44,7 @@ const Skills = () => {
         { id: kafka, name: "Kafka" },
         { id: linux, name: "Linux" },
         { id: git, name: "Git" },
-        { id: docker, name: "Docker" },
-        { id: aws, name: "AWS" }
+        { id: docker, name: "Docker" }
     ]
 
     return (
