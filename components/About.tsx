@@ -73,10 +73,10 @@ const About = () => {
                             Hello! I&apos;m delighted to introduce myself.
                         </div>
                         <div className='md:my-4 xs:my-2'>
-                            I’m from Mumbai and passionate about software development. With experience in both frontend and backend web applications, I have a comprehensive understanding of the full development lifecycle.
+                            I am from Mumbai and I love software engineering (Especially in Java/Springboot development). Having practiced in both front-end & back-end along with some other devops technologies, I have a broad knowledge on entire development cycle.
                         </div>
                         <div>
-                            Over the past two years, I&apos;ve had the opportunity to work with a variety of web technologies, which has significantly enriched my expertise. My curiosity drives me to continuously learn and implement new technologies, leading to the creation of impactful and innovative projects.
+                            For the last couple of years, I have been learning and working with various web technologies and hence improved my expertise in it. My curiosity is insatiable and therefore I always strive to learn new things by applying them in technology which has led to development of influential and innovative projects.
                         </div>
                     </motion.div>
                 </div>
