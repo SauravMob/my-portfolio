@@ -12,7 +12,7 @@ const Home = () => {
     return (
         <div
             id="home"
-            className='w-screen h-screen bg-desktop-pic bg-cover bg-center lg:p-16 xs:px-8 xs:py-16 cursor-default'
+            className='w-screen h-screen bg-desktop-pic bg-cover lg:p-16 xs:px-8 xs:py-16 cursor-default'
         >
             <div className='flex flex-col h-full justify-center'>
                 <motion.p
@@ -54,7 +54,7 @@ const Home = () => {
                             visible: { opacity: 1 },
                             hidden: { opacity: 0 }
                         }}
-                        className={`${hollow.className} ml-4 transition ease-in-out hover:scale-125 hover:text-blue-500 duration-150 inline-block font-extrabold lg:text-7xl sm:text-6xl xs:text-4xl back`}>S</motion.span>
+                        className={`${hollow.className} ml-4 transition ease-in-out hover:scale-125 hover:text-blue-500 duration-150 inline-block font-extrabold lg:text-7xl sm:text-6xl xs:text-4xl text-gray-50`}>S</motion.span>
                     <motion.span
                         initial="hidden"
                         whileInView="visible"
@@ -67,7 +67,7 @@ const Home = () => {
                             visible: { opacity: 1 },
                             hidden: { opacity: 0 }
                         }}
-                        className={`${hollow.className} transition ease-in-out hover:scale-125 hover:text-blue-500 duration-150 inline-block font-extrabold lg:text-7xl sm:text-6xl xs:text-4xl`}>a</motion.span>
+                        className={`${hollow.className} transition ease-in-out hover:scale-125 hover:text-blue-500 duration-150 inline-block font-extrabold lg:text-7xl sm:text-6xl xs:text-4xl text-gray-50`}>a</motion.span>
                     <motion.span
                         initial="hidden"
                         whileInView="visible"
@@ -80,7 +80,7 @@ const Home = () => {
                             visible: { opacity: 1 },
                             hidden: { opacity: 0 }
                         }}
-                        className={`${hollow.className} transition ease-in-out hover:scale-125 hover:text-blue-500 duration-150 inline-block font-extrabold lg:text-7xl sm:text-6xl xs:text-4xl`}>u</motion.span>
+                        className={`${hollow.className} transition ease-in-out hover:scale-125 hover:text-blue-500 duration-150 inline-block font-extrabold lg:text-7xl sm:text-6xl xs:text-4xl text-gray-50`}>u</motion.span>
                     <motion.span
                         initial="hidden"
                         whileInView="visible"
@@ -93,7 +93,7 @@ const Home = () => {
                             visible: { opacity: 1 },
                             hidden: { opacity: 0 }
                         }}
-                        className={`${hollow.className} transition ease-in-out hover:scale-125 hover:text-blue-500 duration-150 inline-block font-extrabold lg:text-7xl sm:text-6xl xs:text-4xl`}>r</motion.span>
+                        className={`${hollow.className} transition ease-in-out hover:scale-125 hover:text-blue-500 duration-150 inline-block font-extrabold lg:text-7xl sm:text-6xl xs:text-4xl text-gray-50`}>r</motion.span>
                     <motion.span
                         initial="hidden"
                         whileInView="visible"
@@ -106,7 +106,7 @@ const Home = () => {
                             visible: { opacity: 1 },
                             hidden: { opacity: 0 }
                         }}
-                        className={`${hollow.className} transition ease-in-out hover:scale-125 hover:text-blue-500 duration-150 inline-block font-extrabold lg:text-7xl sm:text-6xl xs:text-4xl`}>a</motion.span>
+                        className={`${hollow.className} transition ease-in-out hover:scale-125 hover:text-blue-500 duration-150 inline-block font-extrabold lg:text-7xl sm:text-6xl xs:text-4xl text-gray-50`}>a</motion.span>
                     <motion.span
                         initial="hidden"
                         whileInView="visible"
@@ -119,7 +119,7 @@ const Home = () => {
                             visible: { opacity: 1 },
                             hidden: { opacity: 0 }
                         }}
-                        className={`${hollow.className} transition ease-in-out hover:scale-125 hover:text-blue-500 duration-150 inline-block font-extrabold lg:text-7xl sm:text-6xl xs:text-4xl`}>v</motion.span>
+                        className={`${hollow.className} transition ease-in-out hover:scale-125 hover:text-blue-500 duration-150 inline-block font-extrabold lg:text-7xl sm:text-6xl xs:text-4xl text-gray-50`}>v</motion.span>
                     <motion.span
                         initial="hidden"
                         whileInView="visible"
@@ -132,7 +132,7 @@ const Home = () => {
                             visible: { opacity: 1 },
                             hidden: { opacity: 0 }
                         }}
-                        className={`${hollow.className} ml-4 transition ease-in-out hover:scale-125 hover:text-blue-500 duration-150 inline-block font-extrabold lg:text-7xl sm:text-6xl xs:text-4xl`}>U</motion.span>
+                        className={`${hollow.className} ml-4 transition ease-in-out hover:scale-125 hover:text-blue-500 duration-150 inline-block font-extrabold lg:text-7xl sm:text-6xl xs:text-4xl text-gray-50`}>U</motion.span>
                     <motion.span
                         initial="hidden"
                         whileInView="visible"
@@ -145,7 +145,7 @@ const Home = () => {
                             visible: { opacity: 1 },
                             hidden: { opacity: 0 }
                         }}
-                        className={`${hollow.className} transition ease-in-out hover:scale-125 hover:text-blue-500 duration-150 inline-block font-extrabold lg:text-7xl sm:text-6xl xs:text-4xl`}>p</motion.span>
+                        className={`${hollow.className} transition ease-in-out hover:scale-125 hover:text-blue-500 duration-150 inline-block font-extrabold lg:text-7xl sm:text-6xl xs:text-4xl text-gray-50`}>p</motion.span>
                     <motion.span
                         initial="hidden"
                         whileInView="visible"
@@ -158,7 +158,7 @@ const Home = () => {
                             visible: { opacity: 1 },
                             hidden: { opacity: 0 }
                         }}
-                        className={`${hollow.className} transition ease-in-out hover:scale-125 hover:text-blue-500 duration-150 inline-block font-extrabold lg:text-7xl sm:text-6xl xs:text-4xl`}>a</motion.span>
+                        className={`${hollow.className} transition ease-in-out hover:scale-125 hover:text-blue-500 duration-150 inline-block font-extrabold lg:text-7xl sm:text-6xl xs:text-4xl text-gray-50`}>a</motion.span>
                     <motion.span
                         initial="hidden"
                         whileInView="visible"
@@ -171,7 +171,7 @@ const Home = () => {
                             visible: { opacity: 1 },
                             hidden: { opacity: 0 }
                         }}
-                        className={`${hollow.className} transition ease-in-out hover:scale-125 hover:text-blue-500 duration-150 inline-block font-extrabold lg:text-7xl sm:text-6xl xs:text-4xl`}>d</motion.span>
+                        className={`${hollow.className} transition ease-in-out hover:scale-125 hover:text-blue-500 duration-150 inline-block font-extrabold lg:text-7xl sm:text-6xl xs:text-4xl text-gray-50`}>d</motion.span>
                     <motion.span
                         initial="hidden"
                         whileInView="visible"
@@ -184,7 +184,7 @@ const Home = () => {
                             visible: { opacity: 1 },
                             hidden: { opacity: 0 }
                         }}
-                        className={`${hollow.className} transition ease-in-out hover:scale-125 hover:text-blue-500 duration-150 inline-block font-extrabold lg:text-7xl sm:text-6xl xs:text-4xl`}>h</motion.span>
+                        className={`${hollow.className} transition ease-in-out hover:scale-125 hover:text-blue-500 duration-150 inline-block font-extrabold lg:text-7xl sm:text-6xl xs:text-4xl text-gray-50`}>h</motion.span>
                     <motion.span
                         initial="hidden"
                         whileInView="visible"
@@ -197,7 +197,7 @@ const Home = () => {
                             visible: { opacity: 1 },
                             hidden: { opacity: 0 }
                         }}
-                        className={`${hollow.className} transition ease-in-out hover:scale-125 hover:text-blue-500 duration-150 inline-block font-extrabold lg:text-7xl sm:text-6xl xs:text-4xl`}>y</motion.span>
+                        className={`${hollow.className} transition ease-in-out hover:scale-125 hover:text-blue-500 duration-150 inline-block font-extrabold lg:text-7xl sm:text-6xl xs:text-4xl text-gray-50`}>y</motion.span>
                     <motion.span
                         initial="hidden"
                         whileInView="visible"
@@ -210,7 +210,7 @@ const Home = () => {
                             visible: { opacity: 1 },
                             hidden: { opacity: 0 }
                         }}
-                        className={`${hollow.className} transition ease-in-out hover:scale-125 hover:text-blue-500 duration-150 inline-block font-extrabold lg:text-7xl sm:text-6xl xs:text-4xl`}>a</motion.span>
+                        className={`${hollow.className} transition ease-in-out hover:scale-125 hover:text-blue-500 duration-150 inline-block font-extrabold lg:text-7xl sm:text-6xl xs:text-4xl text-gray-50`}>a</motion.span>
                     <motion.span
                         initial="hidden"
                         whileInView="visible"
@@ -223,7 +223,7 @@ const Home = () => {
                             visible: { opacity: 1 },
                             hidden: { opacity: 0 }
                         }}
-                        className={`${hollow.className} transition ease-in-out hover:scale-125 hover:text-blue-500 duration-150 inline-block font-extrabold lg:text-7xl sm:text-6xl xs:text-4xl`}>y</motion.span>
+                        className={`${hollow.className} transition ease-in-out hover:scale-125 hover:text-blue-500 duration-150 inline-block font-extrabold lg:text-7xl sm:text-6xl xs:text-4xl text-gray-50`}>y</motion.span>
                     ,</div>
                 <motion.p
                     initial="hidden"
