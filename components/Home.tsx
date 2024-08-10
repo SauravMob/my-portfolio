@@ -16,141 +16,225 @@ const Home = () => {
         >
             <div className='flex flex-col h-full justify-center'>
                 <motion.p
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    transition={{
-                        duration: 1
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true }}
+                    transition={{ duration: 1 }}
+                    variants={{
+                        visible: { opacity: 1 },
+                        hidden: { opacity: 0 }
                     }}
-                    className='lg:text-6xl sm:text-4xl xs:text-2xl text-gray-300 font-medium'>Hey,</motion.p>
+                    className='lg:text-6xl sm:text-4xl xs:text-2xl text-gray-300 font-medium'>
+                    Hey,
+                </motion.p>
                 <div className='text-gray-300 lg:my-6 sm:my-3 xs:my-2 font-medium'>
                     <motion.span
-                        initial={{ opacity: 0 }}
-                        whileInView={{ opacity: 1 }}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
                         transition={{
                             duration: 1,
                             delay: 0.5
                         }}
+                        variants={{
+                            visible: { opacity: 1 },
+                            hidden: { opacity: 0 }
+                        }}
                         className='lg:text-6xl sm:text-4xl xs:text-2xl'
                     >I&apos;m</motion.span>
                     <motion.span
-                        initial={{ opacity: 0 }}
-                        whileInView={{ opacity: 1 }}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
                         transition={{
                             duration: 1,
                             delay: 0.6
                         }}
+                        variants={{
+                            visible: { opacity: 1 },
+                            hidden: { opacity: 0 }
+                        }}
                         className={`${hollow.className} ml-4 transition ease-in-out hover:scale-125 hover:text-blue-500 duration-150 inline-block font-extrabold lg:text-7xl sm:text-6xl xs:text-4xl back`}>S</motion.span>
                     <motion.span
-                        initial={{ opacity: 0 }}
-                        whileInView={{ opacity: 1 }}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
                         transition={{
                             duration: 1,
                             delay: 0.65
                         }}
+                        variants={{
+                            visible: { opacity: 1 },
+                            hidden: { opacity: 0 }
+                        }}
                         className={`${hollow.className} transition ease-in-out hover:scale-125 hover:text-blue-500 duration-150 inline-block font-extrabold lg:text-7xl sm:text-6xl xs:text-4xl`}>a</motion.span>
                     <motion.span
-                        initial={{ opacity: 0 }}
-                        whileInView={{ opacity: 1 }}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
                         transition={{
                             duration: 1,
                             delay: 0.7
                         }}
+                        variants={{
+                            visible: { opacity: 1 },
+                            hidden: { opacity: 0 }
+                        }}
                         className={`${hollow.className} transition ease-in-out hover:scale-125 hover:text-blue-500 duration-150 inline-block font-extrabold lg:text-7xl sm:text-6xl xs:text-4xl`}>u</motion.span>
                     <motion.span
-                        initial={{ opacity: 0 }}
-                        whileInView={{ opacity: 1 }}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
                         transition={{
                             duration: 1,
                             delay: 0.75
                         }}
+                        variants={{
+                            visible: { opacity: 1 },
+                            hidden: { opacity: 0 }
+                        }}
                         className={`${hollow.className} transition ease-in-out hover:scale-125 hover:text-blue-500 duration-150 inline-block font-extrabold lg:text-7xl sm:text-6xl xs:text-4xl`}>r</motion.span>
                     <motion.span
-                        initial={{ opacity: 0 }}
-                        whileInView={{ opacity: 1 }}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
                         transition={{
                             duration: 1,
                             delay: 0.8
                         }}
+                        variants={{
+                            visible: { opacity: 1 },
+                            hidden: { opacity: 0 }
+                        }}
                         className={`${hollow.className} transition ease-in-out hover:scale-125 hover:text-blue-500 duration-150 inline-block font-extrabold lg:text-7xl sm:text-6xl xs:text-4xl`}>a</motion.span>
                     <motion.span
-                        initial={{ opacity: 0 }}
-                        whileInView={{ opacity: 1 }}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
                         transition={{
                             duration: 1,
                             delay: 0.85
                         }}
+                        variants={{
+                            visible: { opacity: 1 },
+                            hidden: { opacity: 0 }
+                        }}
                         className={`${hollow.className} transition ease-in-out hover:scale-125 hover:text-blue-500 duration-150 inline-block font-extrabold lg:text-7xl sm:text-6xl xs:text-4xl`}>v</motion.span>
                     <motion.span
-                        initial={{ opacity: 0 }}
-                        whileInView={{ opacity: 1 }}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
                         transition={{
                             duration: 1,
                             delay: 0.9
                         }}
+                        variants={{
+                            visible: { opacity: 1 },
+                            hidden: { opacity: 0 }
+                        }}
                         className={`${hollow.className} ml-4 transition ease-in-out hover:scale-125 hover:text-blue-500 duration-150 inline-block font-extrabold lg:text-7xl sm:text-6xl xs:text-4xl`}>U</motion.span>
                     <motion.span
-                        initial={{ opacity: 0 }}
-                        whileInView={{ opacity: 1 }}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
                         transition={{
                             duration: 1,
                             delay: 0.95
                         }}
+                        variants={{
+                            visible: { opacity: 1 },
+                            hidden: { opacity: 0 }
+                        }}
                         className={`${hollow.className} transition ease-in-out hover:scale-125 hover:text-blue-500 duration-150 inline-block font-extrabold lg:text-7xl sm:text-6xl xs:text-4xl`}>p</motion.span>
                     <motion.span
-                        initial={{ opacity: 0 }}
-                        whileInView={{ opacity: 1 }}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
                         transition={{
                             duration: 1,
                             delay: 1
                         }}
+                        variants={{
+                            visible: { opacity: 1 },
+                            hidden: { opacity: 0 }
+                        }}
                         className={`${hollow.className} transition ease-in-out hover:scale-125 hover:text-blue-500 duration-150 inline-block font-extrabold lg:text-7xl sm:text-6xl xs:text-4xl`}>a</motion.span>
                     <motion.span
-                        initial={{ opacity: 0 }}
-                        whileInView={{ opacity: 1 }}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
                         transition={{
                             duration: 1,
                             delay: 1.05
                         }}
+                        variants={{
+                            visible: { opacity: 1 },
+                            hidden: { opacity: 0 }
+                        }}
                         className={`${hollow.className} transition ease-in-out hover:scale-125 hover:text-blue-500 duration-150 inline-block font-extrabold lg:text-7xl sm:text-6xl xs:text-4xl`}>d</motion.span>
                     <motion.span
-                        initial={{ opacity: 0 }}
-                        whileInView={{ opacity: 1 }}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
                         transition={{
                             duration: 1,
-                            delay: 1.1
+                            delay: 1
+                        }}
+                        variants={{
+                            visible: { opacity: 1 },
+                            hidden: { opacity: 0 }
                         }}
                         className={`${hollow.className} transition ease-in-out hover:scale-125 hover:text-blue-500 duration-150 inline-block font-extrabold lg:text-7xl sm:text-6xl xs:text-4xl`}>h</motion.span>
                     <motion.span
-                        initial={{ opacity: 0 }}
-                        whileInView={{ opacity: 1 }}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
                         transition={{
                             duration: 1,
                             delay: 1.15
+                        }}
+                        variants={{
+                            visible: { opacity: 1 },
+                            hidden: { opacity: 0 }
                         }}
                         className={`${hollow.className} transition ease-in-out hover:scale-125 hover:text-blue-500 duration-150 inline-block font-extrabold lg:text-7xl sm:text-6xl xs:text-4xl`}>y</motion.span>
                     <motion.span
-                        initial={{ opacity: 0 }}
-                        whileInView={{ opacity: 1 }}
-                        transition={{
-                            duration: 1,
-                            delay: 1.15
-                        }}
-                        className={`${hollow.className} transition ease-in-out hover:scale-125 hover:text-blue-500 duration-150 inline-block font-extrabold lg:text-7xl sm:text-6xl xs:text-4xl`}>a</motion.span>
-                    <motion.span
-                        initial={{ opacity: 0 }}
-                        whileInView={{ opacity: 1 }}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
                         transition={{
                             duration: 1,
                             delay: 1.2
                         }}
+                        variants={{
+                            visible: { opacity: 1 },
+                            hidden: { opacity: 0 }
+                        }}
+                        className={`${hollow.className} transition ease-in-out hover:scale-125 hover:text-blue-500 duration-150 inline-block font-extrabold lg:text-7xl sm:text-6xl xs:text-4xl`}>a</motion.span>
+                    <motion.span
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                        transition={{
+                            duration: 1,
+                            delay: 1.25
+                        }}
+                        variants={{
+                            visible: { opacity: 1 },
+                            hidden: { opacity: 0 }
+                        }}
                         className={`${hollow.className} transition ease-in-out hover:scale-125 hover:text-blue-500 duration-150 inline-block font-extrabold lg:text-7xl sm:text-6xl xs:text-4xl`}>y</motion.span>
                     ,</div>
                 <motion.p
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    transition={{
-                        duration: 1
-                    }} className='font-semibold lg:text-3xl sm:text-2xl xs:text-2xl text-gray-400'
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true }}
+                    transition={{ duration: 1 }}
+                    variants={{
+                        visible: { opacity: 1 },
+                        hidden: { opacity: 0 }
+                    }}
+                    className='font-semibold lg:text-3xl sm:text-2xl xs:text-2xl text-gray-400'
                 >Full Stack Developer</motion.p>
             </div>
             <div className='text-white flex gap-4'>

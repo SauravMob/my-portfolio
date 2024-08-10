@@ -11,7 +11,7 @@ const Navbar = () => {
 
     return (
         <>
-            <div className='flex lg:hidden fixed h-full w-full'>
+            <div className='flex lg:hidden fixed h-full w-full z-10'>
                 {!show ? <Menu
                     color='white'
                     size={32}

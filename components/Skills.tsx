@@ -1,7 +1,6 @@
 "use client"
 
 import React from 'react'
-import aws from "@/app/assets/images/aws.webp"
 import bootstrap from "@/app/assets/images/bootstrap.png"
 import css from "@/app/assets/images/css.webp"
 import docker from "@/app/assets/images/docker.webp"
@@ -27,16 +26,16 @@ import { motion } from "framer-motion"
 const Skills = () => {
 
     const skillsArray = [
-        { id: java, name: "Java" },
-        { id: spring, name: "Spring" },
-        { id: javascript, name: "Javascript" },
-        { id: typescript, name: "Typescript" },
+        // { id: java, name: "Java" },
+        { id: spring, name: "Spring Boot" },
+        // { id: javascript, name: "Javascript" },
         { id: reactjs, name: "ReactJs" },
+        { id: typescript, name: "Typescript" },
         { id: nextJs, name: "NextJs" },
         { id: mysql, name: "MySql" },
         { id: mongodb, name: "MongoDB" },
-        { id: html, name: "Html" },
-        { id: css, name: "Css" },
+        // { id: html, name: "Html" },
+        // { id: css, name: "Css" },
         { id: tailwind, name: "Tailwind" },
         { id: bootstrap, name: "Bootstrap" },
         { id: hibernate, name: "Hibernate" },
@@ -56,6 +55,7 @@ const Skills = () => {
 
             <div className='grid grid-cols-2 gap-4'>
                 <motion.ul
+                    viewport={{ once: true }}
                     variants={{
                         hidden: { opacity: 1, scale: 0 },
                         visible: {
@@ -74,12 +74,14 @@ const Skills = () => {
                     {skillsArray.map((v, k) => (
                         <motion.li
                             key={k}
-                            initial={{ y: 20, opacity: 0 }}
-                            whileInView={{
-                                y: 0,
-                                opacity: 1
-                            }}
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ once: true }}
                             transition={{ duration: 1 }}
+                            variants={{
+                                visible: { y: 0, opacity: 1 },
+                                hidden: { y: 20, opacity: 0 }
+                            }}
                             className="bg-white/30 backdrop-blur-md rounded-xl flex items-center p-2 gap-2 col-span-1"
                         >
                             <Image
@@ -92,10 +94,13 @@ const Skills = () => {
                     ))}
                 </motion.ul>
                 <motion.div
-                    initial={{ x: 200 }}
-                    whileInView={{ x: 0 }}
-                    transition={{
-                        duration: 1
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true }}
+                    transition={{ duration: 1 }}
+                    variants={{
+                        visible: { x: 0 },
+                        hidden: { x: 200 }
                     }}
                     className="flex flex-col p-8 bg-white/30 backdrop-blur-md lg:my-10 w-full rounded-xl lg:h-80 lg:col-span-1 md:col-span-4 sm:col-span-3 xs:col-span-2">
                     <h1 className="font-semibold md:text-lg">
