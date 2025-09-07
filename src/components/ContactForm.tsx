@@ -24,15 +24,39 @@ const ContactForm = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    setTimeout(() => {
-      toast({
-        title: "Message sent successfully!",
-        description: "Thank you for reaching out. I'll get back to you soon.",
+    try {
+      const response = await fetch('https://formspree.io/f/xeolvzqb', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+          _replyto: formData.email,
+        }),
       });
-      setFormData({ name: '', email: '', subject: '', message: '' });
+
+      if (response.ok) {
+        toast({
+          title: "Message sent successfully! ✅",
+          description: "Thank you for reaching out. I'll get back to you soon.",
+        });
+        setFormData({ name: '', email: '', subject: '', message: '' });
+      } else {
+        throw new Error('Failed to send message');
+      }
+    } catch (error) {
+      toast({
+        title: "Failed to send message ❌",
+        description: "Something went wrong. Please try again or contact me directly.",
+        variant: "destructive",
+      });
+    } finally {
       setIsSubmitting(false);
-    }, 1000);
+    }
   };
 
   const contactMethods = [
@@ -45,14 +69,14 @@ const ContactForm = () => {
     {
       icon: Mail,
       label: 'Email',
-      value: 'saurav@example.com',
-      action: () => window.open('mailto:saurav@example.com')
+      value: 'sauravupadhyay193@gmail.com',
+      action: () => window.open('mailto:sauravupadhyay193@gmail.com')
     },
     {
       icon: MapPin,
       label: 'Location',
       value: 'Mumbai, India',
-      action: () => {}
+      action: () => { }
     }
   ];
 
@@ -109,7 +133,7 @@ const ContactForm = () => {
                         onChange={handleInputChange}
                         required
                         className="form-input"
-                        placeholder="Saurav Upadhyay"
+                        placeholder="Your Name"
                       />
                     </div>
                     <div className="form-group">
@@ -122,11 +146,11 @@ const ContactForm = () => {
                         onChange={handleInputChange}
                         required
                         className="form-input"
-                        placeholder="sauravupadhyay193@gmail.com"
+                        placeholder="your.email@example.com"
                       />
                     </div>
                   </div>
-                  
+
                   <div className="form-group">
                     <label htmlFor="subject" className="form-label">Subject *</label>
                     <input
@@ -137,7 +161,7 @@ const ContactForm = () => {
                       onChange={handleInputChange}
                       required
                       className="form-input"
-                      placeholder="Project Name"
+                      placeholder="What's this about?"
                     />
                   </div>
 
