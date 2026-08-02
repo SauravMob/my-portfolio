@@ -21,7 +21,7 @@ const About = () => {
 
               <div className="flex items-center gap-2 text-muted-foreground">
                 <MapPin size={18} />
-                <span>Mumbai, India</span>
+                <span>Miraroad, Thane (Mumbai Area)</span>
               </div>
             </div>
 
@@ -54,7 +54,7 @@ const About = () => {
               <div className="grid grid-cols-2 gap-4 text-sm">
                 <div>
                   <span className="text-muted-foreground">Experience:</span>
-                  <p className="font-medium">3+ Years</p>
+                  <p className="font-medium">4 Years</p>
                 </div>
                 <div>
                   <span className="text-muted-foreground">Focus:</span>

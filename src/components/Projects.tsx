@@ -4,7 +4,8 @@ import { Badge } from '@/components/ui/badge';
 import { motion } from 'framer-motion';
 import microservicesImage from '@/assets/microservices-project.jpg';
 import dashboardImage from '@/assets/dashboard-project.jpg';
-import danceImage from '@/assets/dance-project.jpg';
+import aiReportImage from '@/assets/ai-report-analyzer.png';
+import sportsphereImage from '@/assets/sportsphere.png';
 
 const Projects = () => {
   const scrollToContact = () => {
@@ -16,31 +17,40 @@ const Projects = () => {
 
   const projects = [
     {
-      title: "Ecommerce Backend Platform",
-      description: "A comprehensive microservices-based e-commerce backend platform with service registration, discovery, API gateway, load balancing, and security features. Supports both synchronous REST API and asynchronous message queue communication.",
+      title: "AI Report Analyzer",
+      description: "An AI-powered business report analysis tool built using Spring AI and React to generate deep analytical insights. Developed as an internal proprietary tool at Mobavenue Pvt Ltd, it integrates local and cloud LLMs (Ollama, Deepseek-R1) for automated analysis and custom optimization suggestions.",
+      image: aiReportImage,
+      technologies: ["Spring AI", "React", "LLMs", "Deepseek-R1", "Ollama", "Tailwind CSS"],
+      github: "private",
+      demo: null,
+      featured: true
+    },
+    {
+      title: "New Sense Store (Ecommerce Platform)",
+      description: "A comprehensive microservices-based e-commerce backend platform built using Spring Boot. Features custom service registration & discovery, API gateway routing, load balancing, and synchronous/asynchronous inter-service communication.",
       image: microservicesImage,
-      technologies: ["Spring Boot", "Microservices", "Docker", "Kafka", "Redis", "MySQL"],
-      github: "https://github.com/SauravMob/MicroserviceProject",
+      technologies: ["Spring Boot", "Microservices", "Docker", "Kafka", "Redis", "MySQL", "Railway"],
+      github: "https://github.com/SauravMob/MicroserviceProject/tree/master",
       demo: null,
       featured: true
     },
     {
       title: "Analytics Dashboard",
-      description: "Built using Next.js and TypeScript, this dashboard seamlessly integrates with various APIs for dynamic real-time data handling. Features large-scale data processing with SSR for improved performance and SEO optimization.",
+      description: "A high-performance analytics dashboard designed using Next.js and TypeScript with SSR and SSG. Features optimized data loading, advanced filtering, and rich data visualization, boosting page speed and search rankings.",
       image: dashboardImage,
-      technologies: ["Next.js", "TypeScript", "React", "API Integration", "SSR"],
+      technologies: ["Next.js", "TypeScript", "React", "SSR & SSG", "Data Visualization", "Tailwind CSS"],
       github: "https://github.com/SauravMob/dsp-ui-nextjs",
       demo: null,
-      featured: true
+      featured: false
     },
     {
-      title: "Interactive Dance Website",
-      description: "Inspired by ThinkDance, this project explores React Spring libraries to create dynamic and interactive user experiences. Emphasizes learning new animation techniques and pushing web animation boundaries.",
-      image: danceImage,
-      technologies: ["React", "React Spring", "CSS3", "Animations", "JavaScript"],
-      github: "https://github.com/SauravMob/dance-app",
+      title: "Sportsphere – Sports Scoring App",
+      description: "End-to-end architecture of a real-time sports scoring mobile app. Features a Node.js REST API with a normalized PostgreSQL schema for event and score tracking, paired with a cross-platform React Native mobile client.",
+      image: sportsphereImage,
+      technologies: ["React Native", "Node.js", "PostgreSQL", "REST APIs", "Mobile App"],
+      github: "https://github.com/SauravMob/sportsphere-api",
       demo: null,
-      featured: false
+      featured: true
     }
   ];
 
@@ -111,16 +121,23 @@ const Projects = () => {
 
                   {/* Project Links */}
                   <div className="flex items-center gap-4">
-                    <Button
-                      variant="outline"
-                      size="sm"
-                      className="hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all duration-300"
-                      onClick={() => window.open(project.github, '_blank')}
-                      data-cursor-hover
-                    >
-                      <Github size={16} className="mr-2" />
-                      Code
-                    </Button>
+                    {project.github !== "private" ? (
+                      <Button
+                        variant="outline"
+                        size="sm"
+                        className="hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all duration-300"
+                        onClick={() => window.open(project.github, '_blank')}
+                        data-cursor-hover
+                      >
+                        <Github size={16} className="mr-2" />
+                        Code
+                      </Button>
+                    ) : (
+                      <Badge variant="outline" className="border-muted-foreground/30 text-muted-foreground py-1.5 px-3 flex items-center gap-1.5 cursor-not-allowed">
+                        <Github size={14} className="opacity-50" />
+                        Private Code
+                      </Badge>
+                    )}
 
                     {project.demo && (
                       <Button
@@ -133,15 +150,17 @@ const Projects = () => {
                       </Button>
                     )}
 
-                    <Button
-                      variant="ghost"
-                      size="sm"
-                      className="ml-auto hover:text-primary"
-                      onClick={() => window.open(project.github, '_blank')}
-                    >
-                      Learn More
-                      <ArrowUpRight size={16} className="ml-1" />
-                    </Button>
+                    {project.github !== "private" && (
+                      <Button
+                        variant="ghost"
+                        size="sm"
+                        className="ml-auto hover:text-primary"
+                        onClick={() => window.open(project.github, '_blank')}
+                      >
+                        Learn More
+                        <ArrowUpRight size={16} className="ml-1" />
+                      </Button>
+                    )}
                   </div>
                 </div>
               </div>

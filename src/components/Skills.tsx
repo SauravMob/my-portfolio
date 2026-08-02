@@ -4,44 +4,55 @@ import { motion } from 'framer-motion';
 const Skills = () => {
   const skillCategories = [
     {
-      title: "Backend Development",
+      title: "Backend & Databases",
       skills: [
         { name: "Spring Boot", level: "Expert", color: "bg-green-500" },
         { name: "Java", level: "Expert", color: "bg-orange-500" },
-        { name: "Hibernate", level: "Advanced", color: "bg-yellow-500" },
-        { name: "MySQL", level: "Advanced", color: "bg-blue-500" },
-        { name: "MongoDB", level: "Advanced", color: "bg-green-600" },
-        { name: "Redis", level: "Intermediate", color: "bg-red-500" },
-        { name: "Kafka", level: "Intermediate", color: "bg-purple-500" },
-        { name: "Aerospike", level: "Intermediate", color: "bg-orange-600" },
-        { name: "ClickhouseDb", level: "Advanced", color: "bg-gray-800" }
+        { name: "Node.js", level: "Advanced", color: "bg-green-600" },
+        { name: "Python", level: "Intermediate", color: "bg-yellow-500" },
+        { name: "ClickHouseDB", level: "Advanced", color: "bg-gray-800" },
+        { name: "MySQL & PostgreSQL", level: "Advanced", color: "bg-blue-500" },
+        { name: "Aerospike & Redis", level: "Advanced", color: "bg-red-500" },
+        { name: "MongoDB", level: "Advanced", color: "bg-green-700" }
       ]
     },
     {
       title: "Frontend Development",
       skills: [
-        { name: "React.js", level: "Advanced", color: "bg-cyan-500" },
+        { name: "React.js", level: "Expert", color: "bg-cyan-500" },
         { name: "TypeScript", level: "Advanced", color: "bg-blue-600" },
         { name: "Next.js", level: "Advanced", color: "bg-gray-800" },
-        { name: "Tailwind CSS", level: "Advanced", color: "bg-teal-500" },
+        { name: "Redux", level: "Advanced", color: "bg-purple-500" },
+        { name: "Tailwind CSS", level: "Expert", color: "bg-teal-500" },
         { name: "Bootstrap", level: "Intermediate", color: "bg-purple-600" }
       ]
     },
     {
-      title: "DevOps & Tools",
+      title: "AI, DevOps & Tools",
       skills: [
+        { name: "AI / LLM Integration", level: "Advanced", color: "bg-indigo-500" },
+        { name: "Deepseek-R1 & Ollama", level: "Advanced", color: "bg-blue-500" },
         { name: "Docker", level: "Advanced", color: "bg-blue-400" },
-        { name: "Git", level: "Advanced", color: "bg-orange-600" },
-        { name: "Linux", level: "Advanced", color: "bg-yellow-600" }
+        { name: "ELK Stack", level: "Advanced", color: "bg-emerald-500" },
+        { name: "Kafka & Apache Solr", level: "Intermediate", color: "bg-purple-500" },
+        { name: "Git & GitLab", level: "Expert", color: "bg-orange-600" }
       ]
     }
   ];
 
   const experience = {
-    title: "Software Developer",
+    title: "Software Developer L2",
     company: "Mobavenue Pvt Ltd.",
-    description: "Worked as a full stack developer to build a DSP platform used for running campaigns and tracking huge data reports. Primary role includes building APIs and integrating them in frontend applications.",
-    duration: "2022 - Present"
+    duration: "September 2022 - Present",
+    descriptionPoints: [
+      "Spearheaded development & enhancement of the DSP dashboard, delivering critical features for real-time campaign management and reporting.",
+      "Architected an AI-driven Text-to-SQL engine using Python (FastAPI) and OpenAI/Ollama, translating natural language intents into highly optimized ClickHouse and MySQL queries.",
+      "Built a real-time conversational AI reporting interface utilizing WebSockets and Redis for multi-turn chat context.",
+      "Optimized data storage and query performance in MySQL and ClickHouse by approximately 90%.",
+      "Decreased indexing time in Aerospike by 60% using CDT operations.",
+      "Reduced operational overhead by 30% by automating Google Ads and reporting workflows.",
+      "Designed and maintained centralized logging and monitoring using the ELK stack for production stability."
+    ]
   };
 
   return (
@@ -69,14 +80,18 @@ const Skills = () => {
           viewport={{ once: true }}
         >
           <div className="flex items-start gap-6">
-            <div className="w-12 h-12 bg-gradient-to-br from-primary to-accent rounded-xl flex items-center justify-center text-white font-bold text-lg">
+            <div className="w-12 h-12 bg-gradient-to-br from-primary to-accent rounded-xl flex items-center justify-center text-white font-bold text-lg shrink-0">
               M
             </div>
             <div className="flex-1">
               <h3 className="text-2xl font-bold text-primary mb-1">{experience.title}</h3>
               <p className="text-lg font-medium text-foreground mb-2">@ {experience.company}</p>
               <p className="text-sm text-accent font-medium mb-4">{experience.duration}</p>
-              <p className="text-muted-foreground leading-relaxed">{experience.description}</p>
+              <ul className="text-muted-foreground leading-relaxed list-disc pl-5 space-y-2 text-sm md:text-base">
+                {experience.descriptionPoints.map((point, index) => (
+                  <li key={index}>{point}</li>
+                ))}
+              </ul>
             </div>
           </div>
         </motion.div>

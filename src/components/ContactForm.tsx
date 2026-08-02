@@ -75,7 +75,7 @@ const ContactForm = () => {
     {
       icon: MapPin,
       label: 'Location',
-      value: 'Mumbai, India',
+      value: 'Miraroad, Thane (Mumbai Area)',
       action: () => { }
     }
   ];

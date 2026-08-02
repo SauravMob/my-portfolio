@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Phone } from 'lucide-react';
+import { FileText } from 'lucide-react';
 
 const Navigation = () => {
   const [activeSection, setActiveSection] = useState('home');
@@ -59,10 +59,15 @@ const Navigation = () => {
             </div>
           </div>
 
-          <div className="flex items-center space-x-2 text-muted-foreground hover:text-primary transition-colors" data-cursor-hover>
-            <Phone size={16} />
-            <span className="font-mono text-sm">+91 7021496525</span>
-          </div>
+          <a 
+            href="/Saurav_Upadhyay_CV.pdf" 
+            download="Saurav_Upadhyay_CV.pdf"
+            className="flex items-center space-x-2 text-muted-foreground hover:text-primary transition-colors" 
+            data-cursor-hover
+          >
+            <FileText size={16} />
+            <span className="text-sm font-medium">Download CV</span>
+          </a>
         </div>
       </div>
     </nav>

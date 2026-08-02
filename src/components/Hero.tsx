@@ -1,4 +1,4 @@
-import { Github, Linkedin, Twitter, ArrowDown } from 'lucide-react';
+import { Github, Linkedin, Twitter, ArrowDown, FileText } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
 import profileImage from '@/assets/profile-hero.jpeg';
@@ -70,15 +70,30 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.8 }}
             >
-              <Button 
-                onClick={scrollToAbout}
-                size="lg" 
-                className="group btn-primary px-8 py-3 rounded-full shimmer"
-                data-cursor-hover
-              >
-                Get to know me
-                <ArrowDown className="ml-2 h-4 w-4 group-hover:translate-y-1 transition-transform" />
-              </Button>
+              <div className="flex flex-wrap gap-4 items-center">
+                <Button 
+                  onClick={scrollToAbout}
+                  size="lg" 
+                  className="group btn-primary px-8 py-3 rounded-full shimmer"
+                  data-cursor-hover
+                >
+                  Get to know me
+                  <ArrowDown className="ml-2 h-4 w-4 group-hover:translate-y-1 transition-transform" />
+                </Button>
+
+                <Button 
+                  variant="outline"
+                  size="lg" 
+                  className="group border-primary text-foreground hover:bg-primary hover:text-primary-foreground px-8 py-3 rounded-full transition-all duration-300"
+                  asChild
+                  data-cursor-hover
+                >
+                  <a href="/Saurav_Upadhyay_CV.pdf" download="Saurav_Upadhyay_CV.pdf">
+                    Download CV
+                    <FileText className="ml-2 h-4 w-4" />
+                  </a>
+                </Button>
+              </div>
               
               <div className="flex items-center space-x-4">
                 <Button 
