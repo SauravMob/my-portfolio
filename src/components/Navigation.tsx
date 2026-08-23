@@ -45,7 +45,7 @@ const Navigation = () => {
             <div className="text-xl font-bold gradient-text">
               Saurav Upadhyay
             </div>
-            
+
             <div className="hidden md:flex items-center space-x-6">
               {navItems.map((item) => (
                 <button
@@ -60,10 +60,10 @@ const Navigation = () => {
             </div>
           </div>
 
-          <a 
-            href="/Saurav_Upadhyay_CV.pdf" 
+          <a
+            href="/Saurav_Upadhyay_CV.pdf"
             download="Saurav_Upadhyay_CV.pdf"
-            className="flex items-center space-x-2 text-muted-foreground hover:text-primary transition-colors" 
+            className="flex items-center space-x-2 text-muted-foreground hover:text-primary transition-colors"
             data-cursor-hover
           >
             <FileText size={16} />

@@ -21,7 +21,7 @@ const About = () => {
 
               <div className="flex items-center gap-2 text-muted-foreground">
                 <MapPin size={18} />
-                <span>Miraroad, Thane (Mumbai Area)</span>
+                <span>Miraroad, Thane (Mumbai Metropolitan Area)</span>
               </div>
             </div>
 
@@ -33,19 +33,15 @@ const About = () => {
               viewport={{ once: true }}
             >
               <p>
-                Hello! I'm delighted to introduce myself. I am passionate about software engineering,
-                especially Java/Spring Boot development, and have extensive experience across the
-                entire development cycle.
+                Hello! I am a Software Engineer L2 specializing in building high-throughput, distributed backend systems, real-time data ingestion pipelines, and search infrastructures.
               </p>
 
               <p>
-                I’m a Full-Stack Developer with expertise in Java, Spring Boot, React, and modern databases (MySQL, MongoDB, ClickHouse, Aerospike).
-                I’ve built applications in both monolithic and microservice architectures, and I enjoy solving complex problems with clean, scalable solutions.
+                Currently, I am a core engineer at Mobavenue Pvt Ltd., where I design and optimize services serving over 1 billion ad requests daily. My technical expertise centers around Java, Spring Boot, Elasticsearch, and high-performance databases like ClickHouseDB and Aerospike.
               </p>
 
               <p>
-                Beyond full-stack work, I’ve automated workflows with scripting and explored AI projects like building RAG agents and creating embeddings.
-                My passion lies in turning ideas into impactful software while continuously learning and experimenting with new technologies.
+                Beyond backend systems, I build full-stack interfaces with React/Next.js and explore modern AI integrations, including building automated RAG agents, LLM-powered Text-to-SQL query builders, and orchestrating async microservice architectures.
               </p>
             </motion.div>
 

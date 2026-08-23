@@ -6,6 +6,7 @@ import microservicesImage from '@/assets/microservices-project.jpg';
 import dashboardImage from '@/assets/dashboard-project.jpg';
 import aiReportImage from '@/assets/ai-report-analyzer.png';
 import sportsphereImage from '@/assets/sportsphere.png';
+import jazorImage from '@/assets/jazor-project.png';
 
 const Projects = () => {
   const scrollToContact = () => {
@@ -16,6 +17,15 @@ const Projects = () => {
   };
 
   const projects = [
+    {
+      title: "Jazor – Production E-commerce Platform",
+      description: "A production-ready perfume e-commerce store featuring a normalized PostgreSQL schema and custom product catalog. Implemented custom REST APIs using Node.js and Prisma ORM, a responsive React user interface, and secure order processing workflows.",
+      image: jazorImage,
+      technologies: ["Node.js", "React", "Prisma", "PostgreSQL", "Vercel", "Render"],
+      github: "https://github.com/SauravMob",
+      demo: null,
+      featured: true
+    },
     {
       title: "AI Report Analyzer",
       description: "An AI-powered business report analysis tool built using Spring AI and React to generate deep analytical insights. Developed as an internal proprietary tool at Mobavenue Pvt Ltd, it integrates local and cloud LLMs (Ollama, Deepseek-R1) for automated analysis and custom optimization suggestions.",

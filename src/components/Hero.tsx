@@ -25,14 +25,14 @@ const Hero = () => {
       <div className="section-container relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
-          <motion.div 
+          <motion.div
             className="space-y-8"
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
             <div className="space-y-4">
-              <motion.h1 
+              <motion.h1
                 className="text-hero gradient-text"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -43,7 +43,7 @@ const Hero = () => {
                   Saurav Upadhyay
                 </span>
               </motion.h1>
-              <motion.p 
+              <motion.p
                 className="text-subtitle"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -51,29 +51,29 @@ const Hero = () => {
               >
                 Full Stack Developer
               </motion.p>
-              <motion.p 
+              <motion.p
                 className="text-body-large max-w-2xl"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.6 }}
               >
-                Passionate about creating digital experiences that combine beautiful design 
-                with powerful functionality. I specialize in modern web technologies and 
+                Passionate about creating digital experiences that combine beautiful design
+                with powerful functionality. I specialize in modern web technologies and
                 love bringing ideas to life through code.
               </motion.p>
             </div>
 
             {/* CTA and Social Links */}
-            <motion.div 
+            <motion.div
               className="flex flex-col sm:flex-row gap-4 items-start"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.8 }}
             >
               <div className="flex flex-wrap gap-4 items-center">
-                <Button 
+                <Button
                   onClick={scrollToAbout}
-                  size="lg" 
+                  size="lg"
                   className="group btn-primary px-8 py-3 rounded-full shimmer"
                   data-cursor-hover
                 >
@@ -81,9 +81,9 @@ const Hero = () => {
                   <ArrowDown className="ml-2 h-4 w-4 group-hover:translate-y-1 transition-transform" />
                 </Button>
 
-                <Button 
+                <Button
                   variant="outline"
-                  size="lg" 
+                  size="lg"
                   className="group border-primary text-foreground hover:bg-primary hover:text-primary-foreground px-8 py-3 rounded-full transition-all duration-300"
                   asChild
                   data-cursor-hover
@@ -94,12 +94,12 @@ const Hero = () => {
                   </a>
                 </Button>
               </div>
-              
+
               <div className="flex items-center space-x-4">
-                <Button 
-                  variant="ghost" 
-                  size="icon" 
-                  className="hover:scale-125 hover:rotate-12 transition-all duration-300" 
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  className="hover:scale-125 hover:rotate-12 transition-all duration-300"
                   asChild
                   data-cursor-hover
                 >
@@ -107,10 +107,10 @@ const Hero = () => {
                     <Github className="h-5 w-5" />
                   </a>
                 </Button>
-                <Button 
-                  variant="ghost" 
-                  size="icon" 
-                  className="hover:scale-125 hover:rotate-12 transition-all duration-300" 
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  className="hover:scale-125 hover:rotate-12 transition-all duration-300"
                   asChild
                   data-cursor-hover
                 >
@@ -118,10 +118,10 @@ const Hero = () => {
                     <Linkedin className="h-5 w-5" />
                   </a>
                 </Button>
-                <Button 
-                  variant="ghost" 
-                  size="icon" 
-                  className="hover:scale-125 hover:rotate-12 transition-all duration-300" 
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  className="hover:scale-125 hover:rotate-12 transition-all duration-300"
                   asChild
                   data-cursor-hover
                 >
@@ -134,30 +134,30 @@ const Hero = () => {
           </motion.div>
 
           {/* Profile Image */}
-          <motion.div 
+          <motion.div
             className="relative"
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
             <div className="relative w-full max-w-lg mx-auto">
-              <motion.div 
+              <motion.div
                 className="absolute inset-0 bg-gradient-to-r from-primary to-accent rounded-3xl blur-2xl opacity-20"
-                animate={{ 
+                animate={{
                   scale: [1, 1.1, 1],
-                  rotate: [0, 5, -5, 0] 
+                  rotate: [0, 5, -5, 0]
                 }}
-                transition={{ 
-                  duration: 6, 
-                  repeat: Infinity, 
-                  ease: "easeInOut" 
+                transition={{
+                  duration: 6,
+                  repeat: Infinity,
+                  ease: "easeInOut"
                 }}
               />
               <motion.img
                 src={profileImage}
                 alt="Saurav Upadhyay"
                 className="relative w-full h-auto rounded-3xl shadow-2xl cursor-none"
-                whileHover={{ 
+                whileHover={{
                   scale: 1.05,
                   rotate: 2,
                   transition: { duration: 0.3 }
